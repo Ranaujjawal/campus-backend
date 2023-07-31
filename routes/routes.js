@@ -12,7 +12,8 @@ router.post('/post', async (req, res) => {
         message: req.body.message,
         username: req.body.username,
         college: req.body.college,
-        avatarimg: req.body.avatarimg
+        avatarimg: req.body.avatarimg,
+        timestamp: req.body.timestamp,
     })
     try {
         const dataToSave = await data.save();
