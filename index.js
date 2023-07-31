@@ -44,7 +44,7 @@ io.on('connection', (socket) => {
     // Handle client disconnection event
   });
 });
-async function cleanupDatabase() {
+/*async function cleanupDatabase() {
   try {
     // Get all the collection names in the database
     const collections = mongoose.connection.collections;
@@ -64,7 +64,7 @@ async function cleanupDatabase() {
 cron.schedule('0 1 * * *', () => {
   console.log('Running database cleanup task...');
   cleanupDatabase();
-});
+});*/
 const port = 8000;
 server.listen(port, () => {
   console.log(`Server started at http://localhost:${port}`);
