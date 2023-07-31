@@ -20,7 +20,7 @@ const dataSchema = new mongoose.Schema({
     },
      timestamp: {
     type: Date, // The type of the property is Date
-    default: Date.now // The default value will be the current timestamp when the document is created
+  //  default: Date.now // The default value will be the current timestamp when the document is created
   }
 })
 module.exports = mongoose.model('Data', dataSchema)
